@@ -1,0 +1,29 @@
+<div class="container text-center">
+  <h1>Task A. Add Youtube-Player</h1>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/fDkR0TDR9dI" frameborder="0" allowfullscreen></iframe>
+
+  <div class="border border-dark text-center py-5">
+
+  <h1>Task B. Property Binding by Style VS by Class</h1>
+  <h2>1-Property Binding by Class</h2>
+  <button type="button" class="btn" >css class</button>
+  <br>
+  <button type="button" [class.bluevioletclass]="blueviolet" [class.palevioletredclass]="palevioletred" class="mt-3" >call css class binding</button>
+  <br>
+  <button [class.bluevioletclass]="blueviolet" [class.palevioletredclass]="palevioletred" (click)="changecolor()" class="mt-3">call changecolor function</button>
+
+  <h2 class="mt-4">2-Property Binding by Style</h2>
+  <h3 [style.color]="'blueviolet'" [style.text-decoration]="' underline'" class="pb-4">Shimaa Mahmoud Abdelazeem</h3>
+
+
+  <h1>Task C.1 Two Way Binding and Task C.3 Display in consol</h1>
+  <input type="text" [(ngModel)]="username2" />
+  <h1>{{username2}}</h1>
+  <!-- lots of other elements -->
+  <!-- phone refers to the input element; pass its `value` to an event handler -->
+  <button type="button" [style.background-color]="'blueviolet'" (click)="calluername(username2)"> Call </button>
+  <h1 class="pt-3">Task C.2 Temp reference and Task C.3 Display in consol</h1>
+  <input #phone placeholder="phone number"><br>
+  <button type="button" [style.background-color]="'blueviolet'" (click)="callPhone(phone.value)"> Call </button>
+</div>
+</div>
